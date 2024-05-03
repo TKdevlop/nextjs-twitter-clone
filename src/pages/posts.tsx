@@ -15,7 +15,7 @@ import {
 import React, { useEffect } from "react";
 import AddIcon from "@mui/icons-material/Add";
 import { useSession } from "next-auth/react";
-import CustomCard from "./components/CustomCard";
+import CustomCard from "../components/CustomCard";
 import axios from "axios";
 import { GetServerSideProps } from "next";
 import InfiniteScroll from "react-infinite-scroller";
@@ -63,7 +63,7 @@ const Posts: React.FC<IProps> = (props) => {
   const [postsCount, setPostsCount] = React.useState(0);
   const [postText, setPostText] = React.useState("");
   const [commentText, setCommentText] = React.useState("");
-  const { data: session, status } = useSession();
+  // const { data: session, status } = useSession();
   const handleClickOpen = () => {
     setPostText("");
     setOpen(true);

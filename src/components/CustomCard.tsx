@@ -9,7 +9,7 @@ import IconButton from "@mui/material/IconButton";
 import ChatIcon from "@mui/icons-material/Chat";
 import Typography from "@mui/material/Typography";
 import { red } from "@mui/material/colors";
-import { Post } from "../posts";
+import { Post } from "../pages/posts";
 
 interface Props {
   post: Post;
